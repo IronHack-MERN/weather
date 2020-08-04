@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Header from "./components/Header";
 import Form from './components/Form';
+import Weather from './components/Weather';
 
 function App() {
 
@@ -42,7 +43,9 @@ function App() {
               />
             </div>
             <div className='col m6 s12'>
-              the two
+              <Weather
+                result = {result}
+              />
             </div>
           </div>
         </div>
