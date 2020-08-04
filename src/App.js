@@ -10,7 +10,7 @@ function App() {
   });
 
   const [consult, setConsult] = useState(false);
-
+  const [result, setResult] = useState({}); 
   const { city, country } = search;
 
   useEffect ( () => {
@@ -19,11 +19,11 @@ function App() {
       if(consult){
         const appId = 'dce9c4284c2fcb97c487e0832ed7c55a';
         const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${appId}`;
+
         const answer = await fetch(url);
         const result = await answer.json();
-        console.log(result)
+        setResult(result);
       }
-    
     }
     consultAPI();
   }, [consult]);
