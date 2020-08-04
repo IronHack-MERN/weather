@@ -61,13 +61,27 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
   font-size: 1.4rem;
 }
 .temperatura {
-  font-size: 4rem!important
+  font-size: 4rem!important;
 }
 .temperatura span {
   font-size: 2rem!important;
   vertical-align: super;
 }
-
+.temperatura-max {
+  font-size: 2rem!important;
+  background-color: #CE4938;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+}
+.temperatura-min {
+  font-size: 2rem!important;
+  background-color: #187BBE;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 2rem;
+}
 .btn-block {
   display: block!important;
 }

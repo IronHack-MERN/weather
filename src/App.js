@@ -24,6 +24,7 @@ function App() {
         const answer = await fetch(url);
         const result = await answer.json();
         setResult(result);
+        setConsult(false);
       }
     }
     consultAPI();
