@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 
-const Form = () => {
-  const [asearch, setSearch] = useState({
-    city: "",
-    country: "",
-  });
+const Form = ({ search, setSearch, setConsult }) => {
 
   const [error, setError] = useState(false);
-
-  const { city, country } = asearch;
+  const { city, country } = search;
 
   const handleChange = (e) => {
     setSearch({
-      ...asearch,
+      ...search,
       [e.target.name]: e.target.value,
     });
   };
@@ -24,7 +19,9 @@ const Form = () => {
       return;
     }
     setError(false);
+
     // set to the main component
+    setConsult(true);
   };
 
   return (
