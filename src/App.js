@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import Header from "./components/Header";
 import Form from './components/Form';
 import Weather from './components/Weather';
+import Error from './components/Error';
 
 function App() {
 
