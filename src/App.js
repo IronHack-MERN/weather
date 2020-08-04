@@ -12,6 +12,8 @@ function App() {
 
   const [consult, setConsult] = useState(false);
   const [result, setResult] = useState({}); 
+  const [error, setError] = useState(false);
+
   const { city, country } = search;
 
   useEffect ( () => {
@@ -23,12 +25,26 @@ function App() {
 
         const answer = await fetch(url);
         const result = await answer.json();
+        
         setResult(result);
         setConsult(false);
+
+        if(result.cod === '404'){
+          setError(true);
+        } else{
+          setError(false);
+        }
       }
     }
     consultAPI();
   }, [consult]);
+
+  let component;
+  if(error){
+    component = <Error message = 'No results'/>
+  } else{
+    component = <Weather result={result}/>
+  }
 
   return (
     <Fragment>
@@ -44,9 +60,7 @@ function App() {
               />
             </div>
             <div className='col m6 s12'>
-              <Weather
-                result = {result}
-              />
+              {component}
             </div>
           </div>
         </div>
