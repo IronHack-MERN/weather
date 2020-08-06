@@ -21,8 +21,8 @@ function App() {
     const consultAPI = async () => {
 
       if(consult){
-        const appId = 'dce9c4284c2fcb97c487e0832ed7c55a';
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${appId}`;
+        const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`;
 
         const answer = await fetch(url);
         const result = await answer.json();
