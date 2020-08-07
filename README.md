@@ -31,7 +31,7 @@ $ yarn add react-weathericons
 ## Git repo
 The url to repository and deployed project:
 
-- [Repository Frontend Link](https://github.com/elenapiaggio/weather-app)
+- [Repository Frontend Link](https://github.com/elenapiaggio/weather)
 - [Deploy Link](https://react-app-the-weather.netlify.app/)
 
 Made with :heart: by Elena Piaggio
