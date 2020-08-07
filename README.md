@@ -20,8 +20,8 @@ In the project directory, you can run:
 - Html
 - Css
 - Netlify.sh
-- [Weather Library](https://erikflowers.github.io/weather-icons/)
-- [Weather API](https://openweathermap.org/api)
+- [Weather Icons Library](https://erikflowers.github.io/weather-icons/)
+- [OpenWeather API](https://openweathermap.org/api)
 
 ## Install library ReactWeather Icons with yarn
 ```
