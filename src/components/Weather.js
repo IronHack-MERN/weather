@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import WeatherIcons from 'react-weathericons';
 
 const Weather = ({ result }) => {
   const { name, main } = result;
