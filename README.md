@@ -4,6 +4,9 @@
 ## Description
 Project with React.js about the Weather in various cities
 
+## Demo
+![Landing demo](./src/demo.png)
+
 ## Scripts
 In the project directory, you can run:
 

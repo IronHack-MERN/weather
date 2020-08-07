@@ -26,6 +26,7 @@ function App() {
 
         const answer = await fetch(url);
         const result = await answer.json();
+        console.log("----------------->>> RESULT", result);
         
         setResult(result);
         setConsult(false);

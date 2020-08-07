@@ -29,7 +29,7 @@ const Form = ({ search, setSearch, setConsult }) => {
     <form onSubmit={handleSubmit}>
       {error ? <Error message="All fields required" /> : null}
       <div className="input-field col s12">
-        <div class="input-field">
+        <div className="input-field">
           <input
             className="validate"
             type="text"
@@ -42,7 +42,7 @@ const Form = ({ search, setSearch, setConsult }) => {
         </div>
       </div>
       <div className="input-field col s12">
-        <div class="input-field">
+        <div className="input-field">
           <select
             name="country"
             id="country"
