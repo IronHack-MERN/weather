@@ -15,18 +15,13 @@ const Weather = ({ result }) => {
       <div className='black-text'>
         <h2>{name}'s Weather</h2>
         <p className='temperatura'>
-          { parseFloat( main.temp - kelvin, 10 ).toFixed(1) } 
-          <span>&#x2103;</span>
+          { parseFloat( main.temp - kelvin, 10 ).toFixed(1) }&#176;
         </p>
         <p className='temperatura-max'>
-          Max:
-          { parseFloat( main.temp_max - kelvin, 10 ).toFixed(1) } 
-          <span>&#x2103;</span>
+          { parseFloat( main.temp_max - kelvin, 10 ).toFixed(1) }&#176;
         </p>
         <p className='temperatura-min'>
-          Min: 
-          { parseFloat( main.temp_min - kelvin, 10 ).toFixed(1) } 
-          <span>&#x2103;</span>
+          { parseFloat( main.temp_min - kelvin, 10 ).toFixed(1) }&#176;
         </p>
       </div>
     </div>

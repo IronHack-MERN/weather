@@ -52,9 +52,9 @@ function App() {
     <Fragment>
       <Header title="Weather.app" />
       <div className='contenedor-form'>
-        <div className='container'>
+        <div className='container teal lighten-2'>
           <div className='row'>
-            <div className='col m6 s12'>
+            <div className='col m6 s12 teal lighten-4'>
               <Form
                 search = {search}
                 setSearch = {setSearch}
