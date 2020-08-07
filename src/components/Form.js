@@ -65,7 +65,7 @@ const Form = ({ search, setSearch, setConsult }) => {
         <input
           type="submit"
           value="Search"
-          className="waves-effect waves-light btn-large btn-block yellow accent-4"
+          className="waves-effect waves-light btn-large btn-block lime lighten-5"
         />
       </div>
     </form>

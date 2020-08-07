@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Error = ({message}) => {
     return ( 
-        <p className='error red darken-4'>{message}</p>
+        <p className='error red lighten-1'>{message}</p>
      );
 }
 

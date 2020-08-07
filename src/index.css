@@ -70,14 +70,14 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
   font-size: 2rem!important;
   vertical-align: super;
 }
-.temperatura-max {
+.temp-max {
   font-size: 2rem!important;
   background-color: #CE4938;
   width: 50%;
   margin: 0 auto;
   color: white;
 }
-.temperatura-min {
+.temp-min {
   font-size: 2rem!important;
   background-color: #187BBE;
   width: 50%;
