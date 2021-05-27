@@ -1,5 +1,6 @@
 
-# WEATHER APP With React
+# WEATHER
+## React Project
 
 ## Description
 Project with React.js about the Weather in various cities
