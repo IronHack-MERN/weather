@@ -4,6 +4,7 @@
 
 ## Description
 Project with React.js about the Weather in various cities
+Demo project
 
 ## Demo
 ![Landing demo](./src/demo.png)
